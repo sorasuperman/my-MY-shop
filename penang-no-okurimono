@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ペナンのおくりもの | Penang to Japan</title>
+  <meta name="description" content="ペナン発のコーヒーと紅茶、軽い常温アイテムを日本へ。粉・ティーバッグ中心で、ギフトにも最適。">
+  <!-- Canonical (←独自ドメイン取得後に置き換えてください) -->
+  <link rel="canonical" href="https://penang-no-okurimono.jp/">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="ペナンのおくりもの">
+  <meta property="og:description" content="マレーシアの朝をそのままアナタのポストへ">
+  <meta property="og:url" content="https://penang-no-okurimono.jp/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://penang-no-okurimono.jp/jp/og-penang-okurimono.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root{
+      --bg:#0b0d10; --fg:#111; --card:#fff; --muted:#667085; --brand:#111; --accent:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:#fafafa;color:#111}
+    a{color:inherit}
+    .container{max-width:1080px;margin-inline:auto;padding:24px}
+    header.hero{padding:56px 24px;background:linear-gradient(180deg,#ffffff, #f1f5f9)}
+    .hero .inner{max-width:1080px;margin:0 auto;display:grid;gap:16px}
+    .badge{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:#111;color:#fff;font-size:.8rem}
+    h1{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.15;font-size:clamp(1.8rem,3.5vw,2.6rem)}
+    p.lead{margin:.25rem 0 0;color:#475569}
+    .notice{background:#111;color:#fff;border-radius:14px;padding:10px 14px;display:inline-flex;gap:8px;align-items:center;font-size:.92rem}
+    .notice small{opacity:.9}
+
+    /* grid */
+    .grid{display:grid;gap:16px}
+    @media (min-width: 720px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+
+    /* card */
+    .card{background:var(--card);border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column}
+    .card .media{aspect-ratio:4/3;background:#f4f4f5;display:grid;place-items:center}
+    .card .media img{width:100%;height:100%;object-fit:cover}
+    .card .body{padding:16px}
+    .title{font-weight:700;font-size:1.05rem;margin:0 0 4px}
+    .price{font-weight:700}
+    .muted{color:#6b7280;font-size:.9rem}
+
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .qty{display:flex;align-items:center;gap:6px}
+    .qty input{width:64px;padding:8px 10px;border:1px solid #e5e7eb;border-radius:10px}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid #111;background:#111;color:#fff;text-decoration:none;font-weight:700;cursor:pointer}
+    .btn.ghost{background:#fff;color:#111}
+
+    /* sections */
+    section{padding:24px}
+    section.alt{background:#f8fafc}
+    h2{margin:0 0 12px;font-size:1.2rem}
+    ul.policies{list-style:none;padding:0;margin:8px 0 0}
+    ul.policies li{margin:6px 0;color:#374151}
+
+    footer{padding:32px;text-align:center;color:#6b7280}
+
+    /* floating WhatsApp */
+    .wa{position:fixed;right:16px;bottom:16px;background:#22c55e;color:#fff;border-radius:999px;padding:12px 14px;text-decoration:none;font-weight:800;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+
+    .banner{background:#111;color:#fff;border-radius:14px;padding:12px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+    .badge-small{background:#fff;color:#111;border-radius:999px;padding:2px 8px;font-size:.75rem;font-weight:700}
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="inner">
+      <span class="badge" aria-label="Malaysia">MYR / Malaysia</span>
+      <h1>ペナンのおくりもの — マレーシアの朝をそのままアナタのポストへ</h1>
+      <p class="lead">コーヒーと紅茶のセットを中心に、軽くて壊れにくいアイテムだけをお届けします。はじめての方は3つのスターターからどうぞ。</p>
+      <div class="notice" role="note" aria-live="polite">
+        <span>🚚</span><small>Shipping: <strong>West MY</strong> & <strong>East MY</strong> rates shown on each item.</small>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" aria-labelledby="products-heading">
+      <h2 id="products-heading">商品</h2>
+      <div class="grid cols-3" id="products">
+        <!-- SET A -->
+        <article class="card" data-sku="penang-coffee-starter">
+          <div class="media"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="コーヒー ドリップバッグ" loading="lazy"></div>
+          <div class="body">
+            <h3 class="title">ペナン コーヒー スターター</h3>
+            <p class="muted">ホワイトコーヒー（スティック）3本／ドリップバッグ4袋／テ・タリック粉末3本。粉・個包装のみ。</p>
+            <p class="price">¥3,480 <span class="muted">・日本へは追跡付きでお届け（目安5–14日、通関により前後）</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty" aria-label="数量">Qty <input type="number" min="1" value="1" inputmode="numeric" pattern="[0-9]*" aria-label="数量入力"></label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_CHECKOUT_LINK">購入（安全なお支払い）</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=%E3%80%90%E5%95%86%E5%93%81%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E3%83%9A%E3%83%8A%E3%83%B3+%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC+%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC" target="_blank" rel="noopener">WhatsAppで相談</a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SET B -->
+        <article class="card" data-sku="cameron-tea-sampler">
+          <div class="media"><img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1200&auto=format&fit=crop" alt="紅茶 ティーバッグ" loading="lazy"></div>
+          <div class="body">
+            <h3 class="title">キャメロン・ハイランド 紅茶セット</h3>
+            <p class="muted">BOHクラシック10包／レモングラス＆ジンジャー6包／バタフライピー6包。全部ティーバッグ。</p>
+            <p class="price">¥2,980 <span class="muted">・日本へは追跡付きでお届け（目安5–14日）</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty">Qty <input type="number" min="1" value="1"></label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_CHECKOUT_LINK">購入（安全なお支払い）</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=%E3%80%90%E5%95%86%E5%93%81%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E7%B4%85%E8%8C%B6%E3%82%BB%E3%83%83%E3%83%88" target="_blank" rel="noopener">WhatsAppで相談</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SET C -->
+        <article class="card" data-sku="coffee-tea-gift">
+          <div class="media"><img src="https://images.unsplash.com/photo-1495774856032-8b90bbb32b4b?q=80&w=1200&auto=format&fit=crop" alt="ギフトボックス" loading="lazy"></div>
+          <div class="body">
+            <h3 class="title">コーヒー＆ティー ギフトボックス</h3>
+            <p class="muted">ドリップバッグ6／ホワイトコーヒー4本／BOHティーバッグ10包。日本語の内容表示カード付き。</p>
+            <p class="price">¥4,480 <span class="muted">・ギフト包装 +¥300（オプション）</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty">Qty <input type="number" min="1" value="1"></label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_CHECKOUT_LINK">購入（安全なお支払い）</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=%E3%80%90%E5%95%86%E5%93%81%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%80%91%E3%82%AE%E3%83%95%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9" target="_blank" rel="noopener">WhatsAppで相談</a>
+            </div>
+          </div>
+        </article>
+      </div>
+          <div class="body">
+            <h3 class="title">Nasi Lemak Candle</h3>
+            <p class="muted">A playful soy candle inspired by Malaysia’s favourite breakfast.</p>
+            <p class="price">RM39 <span class="muted">· West MY ship RM10 / East MY RM18</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty" aria-label="Quantity">
+                Qty <input type="number" min="1" value="1" inputmode="numeric" pattern="[0-9]*" aria-label="Quantity input">
+              </label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_STRIPE_OR_SENANGPAY_LINK">Buy — Secure Checkout</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=Hi!%20I%20want%20Nasi%20Lemak%20Candle" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="card" data-sku="kopi-drip-bags">
+          <div class="media"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Kopi Drip Bags" loading="lazy"></div>
+          <div class="body">
+            <h3 class="title">Kopi Drip Bags (10 pcs)</h3>
+            <p class="muted">Medium roast. Perfect for gifts and office pantries.</p>
+            <p class="price">RM49 <span class="muted">· West MY RM8 / East MY RM16</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty">Qty <input type="number" min="1" value="1"></label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_YOUR_LINK">Buy — Secure Checkout</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=Hi!%20Kopi%20Drip%20Bags%20please" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="card" data-sku="teh-tarik-mug">
+          <div class="media"><img src="https://images.unsplash.com/photo-1619533061919-646f2bbe7191?q=80&w=1200&auto=format&fit=crop" alt="Teh Tarik Mug" loading="lazy"></div>
+          <div class="body">
+            <h3 class="title">Teh Tarik Mug</h3>
+            <p class="muted">Thick ceramic, 350ml. Limited print.</p>
+            <p class="price">RM29 <span class="muted">· West MY RM8 / East MY RM16</span></p>
+            <div class="row" style="margin-top:8px">
+              <label class="qty">Qty <input type="number" min="1" value="1"></label>
+              <button class="btn buy" data-url="https://example.com/pay/REPLACE_WITH_YOUR_LINK">Buy — Secure Checkout</button>
+              <a class="btn ghost" href="https://wa.me/60123456789?text=Hi!%20Teh%20Tarik%20Mug%20please" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container alt" aria-labelledby="howto-heading">
+      <h2 id="howto-heading">お支払いと購入の流れ</h2>
+      <div class="banner" role="note">
+        <span>🔗 各「購入」ボタンの <code>data-url</code> に、Stripe / senangPay / iPay88 などの決済リンクを貼り付けてください。</span>
+        <span class="badge-small">サーバー不要</span>
+      </div>
+      <ul class="policies">
+        <li><strong>配送：</strong> 日本全国に追跡付きでお届け（目安5–14日・通関により前後）。料金と方法はチェックアウト画面でご案内します。</li>
+        <li><strong>返品：</strong> 破損・欠品は到着後7日以内にご連絡ください（写真をご用意ください）。</li>
+        <li><strong>お問い合わせ：</strong> WhatsApp <a href="https://wa.me/60123456789" target="_blank" rel="noopener">+60 12‑345 6789</a> ／ Email <a href="mailto:hello@example.com">hello@example.com</a></li>
+        <li><strong>表示：</strong> 商品には日本語の内容表示カード（原材料／内容量／賞味期限／原産国）を同梱します。</li>
+      </ul>
+    </section>
+
+    <section class="container" aria-labelledby="policy-heading">
+      <h2 id="policy-heading">Store Policies (Malaysia)</h2>
+      <ul class="policies">
+        <li><strong>Shipping:</strong> West MY in 2–4 business days; East MY 4–7. Rates shown on product cards.</li>
+        <li><strong>Returns:</strong> Defects within 7 days of delivery; contact via WhatsApp with photo evidence.</li>
+        <li><strong>Contact:</strong> WhatsApp <a href="https://wa.me/60123456789" target="_blank" rel="noopener">+60 12‑345 6789</a> · Email <a href="mailto:hello@example.com">hello@example.com</a></li>
+        <li><strong>Business Info:</strong> Your sole prop / SSM number here.</li>
+      </ul>
+    </section>
+  </main>
+
+  <a class="wa" href="https://wa.me/60123456789?text=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%81%E8%B3%BC%E5%85%A5%E5%89%8D%E3%81%AB%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99" aria-label="WhatsAppで質問" target="_blank" rel="noopener">質問する（WhatsApp）</a>
+
+  <footer>© <span id="year"></span> ペナンのおくりもの · 価格は税込表記（JPY）</footer>
+
+  <script>
+    // Auto-year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Attach buy button behavior: add ?quantity=N if provider supports it
+    document.querySelectorAll('.card').forEach(card => {
+      const buyBtn = card.querySelector('.buy');
+      const qtyInput = card.querySelector('.qty input');
+      if (!buyBtn || !qtyInput) return;
+      buyBtn.addEventListener('click', () => {
+        const base = buyBtn.getAttribute('data-url');
+        const qty = Math.max(1, parseInt(qtyInput.value || '1', 10));
+        // If the provider supports quantity param, append it; otherwise just open base link.
+        const url = base.includes('?') ? `${base}&quantity=${qty}` : `${base}?quantity=${qty}`;
+        // Open in a new tab to keep user on the page as well
+        window.open(url, '_blank', 'noopener');
+      });
+    });
+  </script>
+</body>
+</html>
